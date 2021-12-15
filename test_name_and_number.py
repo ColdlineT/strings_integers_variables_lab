@@ -1,3 +1,4 @@
+
 # You can run tests 1 at a time by pressing the green play button next to the test name
 # When you run these tests, they will ask you for an input
 # To give an input, you need to click in the run box below, after the prompt
@@ -11,10 +12,10 @@ from name_and_number import name_and_phone_number, what_type_does_input_return, 
 
 class Test(TestCase):
     def test_name_and_phone_number(self):
-        self.assertEqual(name_and_phone_number(), "expectation")
+        self.assertEqual(name_and_phone_number(), "Hello, Jerry, is 333 your phone number?")
 
     def test_what_type_does_input_return(self):
-        self.assertEqual(what_type_does_input_return(), "expectation")
+        self.assertEqual(what_type_does_input_return(), 26)
 
     def test_add_your_two_favorite_numbers(self):
-        self.assertEqual(add_your_two_favorite_numbers(), f"expectation: {7 + 19}")
+        self.assertEqual(add_your_two_favorite_numbers(), "The sum of your favorite numbers is 4")
